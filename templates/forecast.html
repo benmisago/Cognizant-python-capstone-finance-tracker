@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Spending Forecast</h2>
+
+<div class="row mt-4">
+  <div class="col-md-4">
+    <div class="card text-white bg-primary mb-3">
+      <div class="card-header">Weekly Forecast</div>
+      <div class="card-body">
+        <h5 class="card-title">${{ weekly }}</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card text-white bg-success mb-3">
+      <div class="card-header">Monthly Forecast</div>
+      <div class="card-body">
+        <h5 class="card-title">${{ monthly }}</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card text-white bg-warning mb-3">
+      <div class="card-header">Yearly Forecast</div>
+      <div class="card-body">
+        <h5 class="card-title">${{ yearly }}</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p class="text-muted mt-4">Based on your past 30 days of spending.</p>
+{% endblock %}
